@@ -47,7 +47,7 @@ document.addEventListener("wheel", event => {
   var timeNow = new Date().getTime();
 
   if (timeNow - lastAnimation < idlePeriod + animationDuration) {
-    event.preventDefault();
+    // event.preventDefault();
     return;
   }
 

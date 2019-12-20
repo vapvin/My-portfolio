@@ -1,6 +1,7 @@
 const content = document.querySelectorAll("section");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
+
 const idlePeriod = 100;
 const animationDuration = 1000;
 
@@ -31,7 +32,7 @@ prev.addEventListener("click", () => {
 });
 
 next.addEventListener("click", () => {
-  if (index > 2) return;
+  if (index > 4) return;
   toggleText(index, "hide");
   index++;
   content.forEach((section, i) => {
